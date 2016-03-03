@@ -104,7 +104,7 @@
 		
 		TabMenuItemFlash {
 			bgcolor=orange500
-			textcolor=text_onLightBG
+			textcolor=text_onDarkBG
 
 			render_bg {}
 		}

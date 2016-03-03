@@ -70,7 +70,7 @@
 		}
 
 		PauseButton {   
-			textcolor=white
+			textcolor=black
 			font-family=mediumfont
 			font-size=18
 			font-size=19 [$OSX]
@@ -110,7 +110,7 @@
 			}
 			
 		ResumeButton {
-			textcolor=white
+			textcolor=black
 			font-family=mediumfont
 			font-size=18
 			font-size=19 [$OSX]

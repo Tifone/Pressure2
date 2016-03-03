@@ -1,7 +1,7 @@
 "friends/ChatRoomDlgFriend.res" {
 	styles {
 		Label {
-			textcolor=disabled_onLightBG
+			textcolor=disabled_onDarkBG
 			font-size=14
 			font-size=15 [$OSX]
 		}
@@ -76,7 +76,7 @@
 
 		EmoticonMenuItemStyle {
 			bgcolor=none
-			textcolor=text_onLightBG
+			textcolor=text_onDarkBG
 			font-size=24
 			font-size=25 [$OSX]
 			inset="-3 -1 0 0"
@@ -86,7 +86,7 @@
 		
 			EmoticonMenuItemStyle:hover {
 				bgcolor=none
-				textcolor=secondarytext_onLightBG				
+				textcolor=secondarytext_onDarkBG				
 
 				render_bg {
 					0="fill(x0,y0,x1,y1, blue500)"
@@ -95,7 +95,7 @@
 		
 			EmoticonMenuItemStyle:selected {
 				bgcolor=none
-				textcolor=secondaryText_onLightBG
+				textcolor=secondaryText_onDarkBG
 			}  
 
 		CChatActionsButton {
@@ -126,7 +126,7 @@
 		}
 
 		SectionedListPanelInterior {
-			bgcolor=white
+			bgcolor=black
 
 			render {}
 			render_bg {}
@@ -134,14 +134,14 @@
 
 		CFriendsListSectionHeader {
 	    	inset="0 0 0 0"
-	        textcolor=text_onLightBG
+	        textcolor=text_onDarkBG
 			font-style=regular
 			font-family=mediumfont
 
 	        render_bg {
 	            0="fill(x0,y0,x1,y1, white)"
-	            1="fill(x0-2,y0-1,x1,y0, dividers_onLightBG_solid)"
-	            2="fill(x0-2,y1,x1,y1+1, dividers_onLightBG_solid)"
+	            1="fill(x0-2,y0-1,x1,y0, dividers_onDarkBG_solid)"
+	            2="fill(x0-2,y1,x1,y1+1, dividers_onDarkBG_solid)"
 	        }    
 	    }
 
@@ -154,40 +154,40 @@
 
 		  render {}
 		  render_bg {
-			0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG_solid)"
-			1="fill(x0,y1,x1+2,y1+1, dividers_onLightBG_solid)"
+			0="fill(x0,y0-1,x1+2,y0, dividers_onDarkBG_solid)"
+			1="fill(x0,y1,x1+2,y1+1, dividers_onDarkBG_solid)"
 			2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/standard/down_dark)"
 		  }
 		}
 
 		  SectionedListPanelCollapser:hover {
 			render_bg {
-			  0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG_solid)"
-			  1="fill(x0,y1,x1+2,y1+1, dividers_onLightBG_solid)"
+			  0="fill(x0,y0-1,x1+2,y0, dividers_onDarkBG_solid)"
+			  1="fill(x0,y1,x1+2,y1+1, dividers_onDarkBG_solid)"
 			  2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/hover/down_dark)"
 			}
 		  }
 
 		  SectionedListPanelCollapser:selected {
 			render_bg {
-			  0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG_solid)"
-			  1="fill(x0,y1,x1+2,y1+1, dividers_onLightBG_solid)"
+			  0="fill(x0,y0-1,x1+2,y0, dividers_onDarkBG_solid)"
+			  1="fill(x0,y1,x1+2,y1+1, dividers_onDarkBG_solid)"
 			  2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/standard/up_dark)"
 			}
 		  }
 
 			SectionedListPanelCollapser:selected:hover {
 			  render_bg {
-				0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG_solid)"
-				1="fill(x0,y1,x1+2,y1+1, dividers_onLightBG_solid)"
+				0="fill(x0,y0-1,x1+2,y0, dividers_onDarkBG_solid)"
+				1="fill(x0,y1,x1+2,y1+1, dividers_onDarkBG_solid)"
 				2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/hover/up_dark)"
 			  }
 			}
 
 		RichText {
 			selectedbgcolor=blue500
-			textcolor=disabled_OnLightBG
-			selectedtextcolor=white
+			textcolor=disabled_onDarkBG
+			selectedtextcolor=black
 			font-family=basefont
 			font-size=17
 			font-size=18 [$OSX]

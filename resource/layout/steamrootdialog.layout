@@ -56,7 +56,7 @@
 		}
 		
 			FrameTitle:framefocus {
-				textcolor=white
+				textcolor=black
 			}
 		
 		RootMenu {
@@ -103,7 +103,7 @@
 		}
 		
 		online_friends {
-			textcolor=white
+			textcolor=black
 			font-family=basefont
 			font-size=16
 			font-size=17 [$OSX]
@@ -232,7 +232,7 @@
 		
 		inboxmenuitem {
 			bgcolor=none
-			textcolor=disabled_onLightBG
+			textcolor=disabled_onDarkBG
 			font-family=basefont
 			font-size=16
 			font-size=17 [$OSX]
@@ -244,13 +244,13 @@
 		}
 
 			inboxmenuitem:hover {
-				textcolor=white
+				textcolor=black
 				bgcolor=blue500
 			}
 		
 		inboxmenuitem_active {
 			bgcolor=none
-			textcolor=text_OnLightBG
+			textcolor=text_onDarkBG
 			font-family=basefont
 			font-size=16
 			font-size=17 [$OSX]
@@ -263,12 +263,12 @@
 		
 			inboxmenuitem_active:selected {
 				bgcolor=blue500
-				textcolor=white
+				textcolor=black
 			}
 			
 			inboxmenuitem_active:hover {
 				bgcolor=blue500
-				textcolor=white
+				textcolor=black
 			}
 		
 		parental_lock_button {
@@ -299,7 +299,7 @@
 			}
 		
 		support_alert {
-			textcolor=white
+			textcolor=black
 			font-family=basefont
 			font-size=20
 			font-size=21 [$OSX]

@@ -19,7 +19,7 @@
 
 		loginerror_style_body {
 			bgcolor=red500
-			textcolor=white
+			textcolor=black
 			padding=8
 		}
 	}

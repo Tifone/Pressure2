@@ -12,7 +12,7 @@
 		}
 	
 			inviteLinkStyle:hover {
-				bgcolor=dividers_onLightBG
+				bgcolor=dividers_onDarkBG
 			}
 
 		menuButtonStyle {

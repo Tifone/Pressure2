@@ -10,7 +10,7 @@
 		}
 
 		status {
-			textcolor=disabled_onLightBG
+			textcolor=disabled_onDarkBG
 			inset="8 0 0 0"
 		}
 

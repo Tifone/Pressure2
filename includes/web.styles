@@ -26,9 +26,9 @@
 		}
 
 		html-imebar {
-			bgcolor=disabled_onLightBG
-			textcolor=text_onLightBG
-			shadowtextcolor=disabled_onLightBG
+			bgcolor=disabled_onDarkBG
+			textcolor=text_onDarkBG
+			shadowtextcolor=disabled_onDarkBG
 			font-family=basefont
 			font-size=15
 			font-size=16 [$OSX]
@@ -40,9 +40,9 @@
 		TextEntryURL {
 			bgcolor=custombackgroundprimary
 			selectedbgcolor=blue500
-			textcolor=text_onLightBG
-			selectedtextcolor=white
-			shadowtextcolor=disabled_onLightBG
+			textcolor=text_onDarkBG
+			selectedtextcolor=black
+			shadowtextcolor=disabled_onDarkBG
 			font-family=basefont
 			font-size=18
 			font-size=19 [$OSX]
@@ -59,7 +59,7 @@
 			TextEntryURL:Hover {}
 
 			TextEntryURL:Disabled {
-				textcolor=disabled_onLightBG
+				textcolor=disabled_onDarkBG
 			}
 		
 		LabelEVCert {
@@ -282,11 +282,11 @@
 
 
 		html-findbar {
-			bgcolor=white
+			bgcolor=black
 			selectedbgcolor=blue500
-			textcolor=text_onLightBG
-			selectedtextcolor=white
-			shadowtextcolor=disabled_onLightBG
+			textcolor=text_onDarkBG
+			selectedtextcolor=black
+			shadowtextcolor=disabled_onDarkBG
 			font-family=basefont
 			font-size=18
 			font-size=19 [$OSX]

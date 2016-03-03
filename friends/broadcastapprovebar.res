@@ -39,7 +39,7 @@
 			}
 
 		Label {
-			textcolor=white
+			textcolor=black
 			font-family=mediumfont
 			font-size=16
 			font-size=17 [$OSX]
@@ -63,13 +63,13 @@
 				textcolor=blue300
 				
 				render_bg {
-					0="fill(x0,y0,x1,y1, dividers_onLightBG)"
+					0="fill(x0,y0,x1,y1, dividers_onDarkBG)"
 				}
 			}
 
 			URLLabel:disabled {
 				bgcolor=none
-				textcolor=disabled_onLightBG
+				textcolor=disabled_onDarkBG
 				
 				render_bg {}
 			}

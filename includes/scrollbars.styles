@@ -1,194 +1,172 @@
 "scrollbars.styles" {
 	colors {
-		// These colors emulate the same scrollbar as seen in Google Chrome/Chromium.
-		ScrollBar.Wide = 16
-		scrollbarhandle = "188 188 188 255"
-		scrollbarhandlehover = "170 170 171 255"
-		scrollbarhandleborder = "168 168 168 255"
-		scrollbarhandleborderhover = "154 154 154 255"
+    	ScrollBar.Wide          16 //19 (11 Seems to make it more akin to iOS Scrollbars)
 	}
 
 	styles {
-		"GamesPage_Details ListPanel ScrollBarSlider" {}
-
+		// ***********************************************
+		// ScrollBars
+		// ***********************************************
 		ScrollBar {
-			inset="0 -15 1 -15"
+			inset="0 -12 0 -10"
 		}
-
-		// Gutter for vertical scrollbars.
-		ScrollBarSlider {
-			bgcolor=grey200
-
-			render {}
-			render_bg {}
-		}
-
-			ScrollBarSlider:disabled {
-				bgcolor=none
-			}
-		
-		// Gutter for horizontal scrollbars.
-		ScrollBarSliderHoriz {
-			bgcolor=grey200
-
-			render {}
-			render_bg {}
-		}
-
-			ScrollBarSliderHoriz:disabled {
-				bgcolor=none
-			}
-
-		"ScrollBar SliderHoriz" {
-			bgcolor=grey200
-
-			render {}
-			render_bg {}
-		}
-
-		ScrollBarHandle {
-			bgcolor=none
-			
-			render_bg{
-				-1="fill(x0+1,y0+1,x1-1,y1-1, scrollbarhandle)"
-				0="fill(x0+1, y0+1, x0+2, y1-1, scrollbarhandleborder)"
-				1="fill(x0+2,y0+1,x1-2,y0+2, scrollbarhandleborder)"
-				2="fill(x1-2,y0+1,x1-1,y1-1, scrollbarhandleborder)"
-				3="fill(x0+2,y1-2,x1-2,y1-1, scrollbarhandleborder)"
-			}
-		}
- 
-			ScrollBarHandle:hover {
-				bgcolor=none
-				
-				render_bg{
-					-1="fill(x0+1,y0+1,x1-1,y1-1, scrollbarhandlehover)"
-					0="fill(x0+1, y0+1, x0+2, y1-1, scrollbarhandleborderhover)"
-					1="fill(x0+2,y0+1,x1-2,y0+2, scrollbarhandleborderhover)"
-					2="fill(x1-2,y0+1,x1-1,y1-1, scrollbarhandleborderhover)"
-					3="fill(x0+2,y1-2,x1-2,y1-1, scrollbarhandleborderhover)"
-				}
-			}	  
-
-			ScrollBarHandle:active {
-				bgcolor=none
-				
-				render_bg{
-					-1="fill(x0+1,y0+1,x1-1,y1-1, scrollbarhandlehover)"
-					0="fill(x0+1, y0+1, x0+2, y1-1, scrollbarhandleborderhover)"
-					1="fill(x0+2,y0+1,x1-2,y0+2, scrollbarhandleborderhover)"
-					2="fill(x1-2,y0+1,x1-1,y1-1, scrollbarhandleborderhover)"
-					3="fill(x0+2,y1-2,x1-2,y1-1, scrollbarhandleborderhover)"
-				}
-			} 
-	
-		SliderHoriz {
-			bgcolor=none
-			
-			render_bg{
-				-1="fill(x0+1,y0+1,x1-1,y1-1, scrollbarhandle)"
-				0="fill(x0+1, y0+1, x0+2, y1-1, scrollbarhandleborder)"
-				1="fill(x0+2,y0+1,x1-2,y0+2, scrollbarhandleborder)"
-				2="fill(x1-2,y0+1,x1-1,y1-1, scrollbarhandleborder)"
-				3="fill(x0+2,y1-2,x1-2,y1-1, scrollbarhandleborder)"
-			}
-		}
- 
-			SliderHoriz:hover {
-				bgcolor=none
-				
-				render_bg{
-					-1="fill(x0+1,y0+1,x1-1,y1-1, scrollbarhandlehover)"
-					0="fill(x0+1, y0+1, x0+2, y1-1, scrollbarhandleborderhover)"
-					1="fill(x0+2,y0+1,x1-2,y0+2, scrollbarhandleborderhover)"
-					2="fill(x1-2,y0+1,x1-1,y1-1, scrollbarhandleborderhover)"
-					3="fill(x0+2,y1-2,x1-2,y1-1, scrollbarhandleborderhover)"
-				}
-			}	  
-
-			SliderHoriz:active {
-				bgcolor=none
-				
-				render_bg{
-					-1="fill(x0+1,y0+1,x1-1,y1-1, scrollbarhandlehover)"
-					0="fill(x0+1, y0+1, x0+2, y1-1, scrollbarhandleborderhover)"
-					1="fill(x0+2,y0+1,x1-2,y0+2, scrollbarhandleborderhover)"
-					2="fill(x1-2,y0+1,x1-1,y1-1, scrollbarhandleborderhover)"
-					3="fill(x0+2,y1-2,x1-2,y1-1, scrollbarhandleborderhover)"
-				}
-			} 
 
 		ScrollBarButton.up {
 			bgcolor=none
 
-			render_bg {}
+			render_bg {} // Nullifies the default background
 		}
-		
+
 			ScrollBarButton.up:hover {
 				bgcolor=none
-
-				render_bg {}
+				render_bg {} // Nullifies the default background
 			}
-		
-			ScrollBarButton.up:active {
-				bgcolor=none
 
-				render_bg {}
+			ScrollBarButton.up:active {
+				render_bg {} // Nullifies the default background
 			}
 
 			ScrollBarButton.up:disabled {
-				bgcolor=none
-
-				render_bg {}
+				render_bg {} // Nullifies the default background
 			}
-	
+
 		ScrollBarButton.down {
 			bgcolor=none
 
-			render_bg {}
+			render_bg {} // Nullifies the default background
 		}
-		
+
 			ScrollBarButton.down:hover {
-				bgcolor=none
-
-				render_bg {}
+				render_bg {} // Nullifies the default background
 			}
-		
+
 			ScrollBarButton.down:active {
-				bgcolor=none
-
-				render_bg {}
+				render_bg {} // Nullifies the default background
 			}
-		
-		
+
+
 			ScrollBarButton.down:disabled {
-				bgcolor=none
-
-				render_bg {}
+				render_bg {} // Nullifies the default background
 			}
-	
+
 		ScrollBarButton.left {
 			bgcolor=none
 
+			render_bg {} // Nullifies the default background
+		}
+
+			ScrollBarButton.left:hover {
+				render_bg {} // Nullifies the default background
+			}
+
+		ScrollBarButton.right {
+			bgcolor=none
+
+			render_bg {} // Nullifies the default background
+		}
+
+			ScrollBarButton.right:hover {
+				render_bg {} // Nullifies the default background
+			}
+
+		ScrollBarHandle { //vertical scrollbar thumb
+			bgcolor=none
+
+			render_bg {
+				0="image( x1 - 10, y0, x1 - 4, y0 + 4, graphics/scrollbar/top )"
+				1="image_tiled( x1 - 10, y0 + 4, x1 - 2, y1 - 4, graphics/scrollbar/middle_vertical )"
+				2="image( x1 - 10, y1 - 4, x1 - 4, y1, graphics/scrollbar/bottom )"
+			}
+		}
+
+			"ScrollBarHandle:hover" {
+				render_bg {
+					0="image( x1 - 10, y0, x1 - 4, y0 + 4, graphics/scrollbar/hover/top )"
+					1="image_tiled( x1 - 10, y0 + 4, x1 - 2, y1 - 4, graphics/scrollbar/hover/middle_vertical )"
+					2="image( x1 - 10, y1 - 4, x1 - 4, y1, graphics/scrollbar/hover/bottom )"
+				}
+			}
+
+			"ScrollBarHandle:active" {
+				render_bg {
+					0="image( x1 - 10, y0, x1 - 4, y0 + 4, graphics/scrollbar/hover/top )"
+					1="image_tiled( x1 - 10, y0 + 4, x1 - 2, y1 - 4, graphics/scrollbar/hover/middle_vertical )"
+					2="image( x1 - 10, y1 - 4, x1 - 4, y1, graphics/scrollbar/hover/bottom )"
+				}
+			}
+
+		"SliderHoriz" { //horizontal scrollbar thumb
+			render_bg {
+				0="image( x0 - 10, y0 + 7, x0 - 6, y0 + 12, graphics/scrollbar/left )"
+				1="image_tiled( x0 - 6, y0 + 7, x1 + 6, y0 + 12, graphics/scrollbar/middle_horizontal )"
+				2="image( x1 + 6, y0 + 7, x1 + 10, y0 + 12, graphics/scrollbar/right )"
+			}
+		}
+
+			"SliderHoriz:hover" {
+				render_bg {
+					0="image( x0 - 10, y0 + 7, x0 - 6, y0 + 12, graphics/scrollbar/hover/left )"
+					1="image_tiled( x0 - 6, y0 + 7, x1 + 6, y0 + 12, graphics/scrollbar/hover/middle_horizontal )"
+					2="image( x1 + 6, y0 + 7, x1 + 10, y0 + 12, graphics/scrollbar/hover/right )"
+				}
+			}
+
+			"SliderHoriz:active" {
+				render_bg {
+					0="image( x0 - 10, y0 + 7, x0 - 6, y0 + 12, graphics/scrollbar/hover/left )"
+					1="image_tiled( x0 - 6, y0 + 7, x1 + 6, y0 + 12, graphics/scrollbar/hover/middle_horizontal )"
+					2="image( x1 + 6, y0 + 7, x1 + 10, y0 + 12, graphics/scrollbar/hover/right )"
+				}
+			}
+
+		ScrollBarSlider { // gutter
+			bgcolor="none"
+
 			render_bg {}
 		}
-		
-			ScrollBarButton.left:hover {
-				bgcolor=none
 
-				render_bg {}
-			}
-			
-		ScrollBarButton.right {
+		ScrollBarSliderHoriz { // gutter
+			bgcolor="none"
+
+			render_bg {}
+		}
+
+		"GamesPage_Details ListPanel ScrollBarSlider" { // gutter in games list detail view
+			bgcolor="none"
+
+			render_bg {}
+		}
+
+		ScrollBarSlider:disabled  {
+			bgcolor="none"
+			render_bg {}
+		}
+
+		"ScrollBar SliderHoriz" { // gutter
+			bgcolor="none"
+		}
+
+		"HTML ScrollBar" {
+			bgcolor="none"
+
+			render_bg {}
+		}
+
+		"HTML ScrollBar.Horizontal" {
+			bgcolor="none"
+
+			render_bg {}
+		}
+
+		"HTML ScrollBarSlider.Horizontal" {
 			bgcolor=none
 
 			render_bg {}
 		}
-			
-			ScrollBarButton.right:hover {
-				bgcolor=none
-				
-				render_bg {}
-			}
+
+		"HTML SliderHoriz" {
+			bgcolor=none
+			render_bg {}
+		}
 	}
 }

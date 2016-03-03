@@ -11,7 +11,7 @@
 		}
 		
 		nameInstanceStyle {
-			textcolor=grey600
+			textcolor=secondarytext_onDarkBG
 			font-family=basefont
 			font-size=16
 			font-size=17 [$OSX]
@@ -38,18 +38,18 @@
 		}
 
 			controlPanelLinkStyle:hover {
-				bgcolor=dividers_onLightBG
+				bgcolor=dividers_onDarkBG
 			}
 
 		statusStyle {
-			textcolor=secondarytext_onLightBG
+			textcolor=secondarytext_onDarkBG
 			font-family=basefont
 			font-size=16
 			font-size=17 [$OSX]
 		}
 		
 			statusStyle:hover {
-				textcolor=text_onLightBG
+				textcolor=text_onDarkBG
 			}
 		
 		inviteLinkStyle {
@@ -64,7 +64,7 @@
 		}
 	
 			inviteLinkStyle:hover {
-				bgcolor=dividers_onLightBG
+				bgcolor=dividers_onDarkBG
 			}
 
 		WebStatusStyle {

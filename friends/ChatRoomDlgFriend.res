@@ -1,7 +1,7 @@
 "friends/ChatRoomDlgFriend.res" {
 	styles {
 		Label {
-			textcolor=disabled_onLightBG
+			textcolor=disabled_onDarkBG
 			font-size=14
 			font-size=15 [$OSX]
 		}
@@ -82,7 +82,7 @@
 
 		EmoticonMenuItemStyle {
 			bgcolor=none
-			textcolor=text_onLightBG
+			textcolor=text_onDarkBG
 			font-size=24
 			font-size=25 [$OSX]
 			inset="-3 -1 0 0"
@@ -92,7 +92,7 @@
 		
 			EmoticonMenuItemStyle:hover {
 				bgcolor=none
-				textcolor=secondarytext_onLightBG
+				textcolor=secondarytext_onDarkBG
 
 				render_bg {
 					0="fill(x0,y0,x1,y1, blue500)"
@@ -101,7 +101,7 @@
 		
 			EmoticonMenuItemStyle:selected {
 				bgcolor=none
-				textcolor=secondaryText_onLightBG
+				textcolor=secondaryText_onDarkBG
 			}
 
 		Button:selected {
@@ -114,7 +114,7 @@
 			"Page Button:selected" {}
 		  
 		Button:disabled {
-			textcolor=disabled_onLightBG
+			textcolor=disabled_onDarkBG
 			render_bg {}
 		}   
 
@@ -142,8 +142,8 @@
 
 		RichText {
 			selectedbgcolor=blue500
-			textcolor=disabled_OnLightBG
-			selectedtextcolor=white
+			textcolor=disabled_onDarkBG
+			selectedtextcolor=black
 			font-family=basefont
 			font-size=17
 			font-size=18 [$OSX]

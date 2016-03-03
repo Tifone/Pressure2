@@ -28,7 +28,7 @@ steam.styles {
 		}
 		
 			FrameTitle:framefocus {
-				textcolor=white
+				textcolor=black
 			}
 
 		Frame {
@@ -43,7 +43,7 @@ steam.styles {
 			bgcolor=none
 
 			render {
-				0="fill(x0, y1 - 1, x1, y1, dividers_OnLightBG)"
+				0="fill(x0, y1 - 1, x1, y1, dividers_onDarkBG)"
 			}
 		}
 
@@ -54,7 +54,7 @@ steam.styles {
 		}
 
 		Panel { 
-			textcolor=text_OnLightBG
+			textcolor=text_onDarkBG
 			font-family=basefont
 			font-size=15
 			font-size=16 [$OSX]
@@ -68,8 +68,8 @@ steam.styles {
 		Label {
 			bgcolor=none
 			selectedbgcolor=blue500
-			textcolor=text_OnLightBG
-			selectedtextcolor=text_OnLightBG
+			textcolor=text_onDarkBG
+			selectedtextcolor=text_onDarkBG
 			font-family=basefont
 			font-size=16
 			font-size=17 [$OSX]
@@ -116,21 +116,21 @@ steam.styles {
 			} 
 
 		Menu {
-			bgcolor=white
+			bgcolor=customgreysecondary
 			inset="0 0 0 0"
 			
 			render {}
 			render_bg {
-				0="fill(x0,y0,x0+1,y1, dividers_OnLightBG)"
-				1="fill(x0+1,y0,x1-1,y0+1, dividers_OnLightBG)"
-				2="fill(x1-1,y0,x1,y1, dividers_OnLightBG)"
-				3="fill(x0+1,y1-1,x1-1,y1, dividers_OnLightBG)"
+				0="fill(x0,y0,x0+1,y1, dividers_onDarkBG)"
+				1="fill(x0+1,y0,x1-1,y0+1, dividers_onDarkBG)"
+				2="fill(x1-1,y0,x1,y1, dividers_onDarkBG)"
+				3="fill(x0+1,y1-1,x1-1,y1, dividers_onDarkBG)"
 			}
 		}
 		
 		MenuItem {
 			bgcolor=none
-			textcolor=text_OnLightBG
+			textcolor=text_onDarkBG
 			font-family=basefont			
 			font-size=17
 			font-size=18 [$OSX]
@@ -143,22 +143,22 @@ steam.styles {
 		}
 
 			MenuItem:hover {
-				textcolor=white
+				textcolor=black
 				bgcolor=blue500
 			}
 		
 			MenuItem:disabled {
-				textcolor=disabled_OnLightBG
+				textcolor=disabled_onDarkBG
 				shadowtextcolor=none
 			}
 		
 				MenuItem:disabled:hover {
-					textcolor=disabled_OnLightBG
+					textcolor=disabled_onDarkBG
 					shadowtextcolor=none
 				}
 
 			MenuItem:selected {
-				textcolor=white
+				textcolor=black
 				bgcolor=blue500
 			}
 
@@ -168,27 +168,27 @@ steam.styles {
 			inset="0 0 0 0"			
 
 			render {
-				0="fill(x0+1, y0+1, x1-1, y0+2, dividers_OnLightBG)"
+				0="fill(x0+1, y0+1, x1-1, y0+2, dividers_onDarkBG)"
 			}
 		}
 
 		SuperNavMenu {
-			bgcolor=white
+			bgcolor=customgreysecondary
 			padding-left=8
 			padding-right=8
 
 			render {}
 			render_bg {
-				0="fill(x0,y0,x0+1,y1, dividers_OnLightBG)"
-				1="fill(x0+1,y0,x1-1,y0+1, dividers_OnLightBG)"
-				2="fill(x1-1,y0,x1,y1, dividers_OnLightBG)"
-				3="fill(x0+1,y1-1,x1-1,y1, dividers_OnLightBG)"
+				0="fill(x0,y0,x0+1,y1, dividers_onDarkBG)"
+				1="fill(x0+1,y0,x1-1,y0+1, dividers_onDarkBG)"
+				2="fill(x1-1,y0,x1,y1, dividers_onDarkBG)"
+				3="fill(x0+1,y1-1,x1-1,y1, dividers_onDarkBG)"
 			}
 		}
 
 		SuperNavMenuItem {
 			bgcolor=none
-			textcolor=text_OnLightBG
+			textcolor=text_onDarkBG
 			font-size=17
 			font-size=18 [$OSX]
 			font-style=normal
@@ -196,19 +196,19 @@ steam.styles {
 
 			SuperNavMenuItem:hover {
 				bgcolor=blue500
-				textcolor=white				
+				textcolor=black				
 			}
 
 			SuperNavMenuItem:selected {
 				bgcolor=blue500
-				textcolor=white				
+				textcolor=black				
 			}
 
 		SuperNavMenuDivider {
 			textcolor=none
 
 			render {
-				1="fill(x0+1, y0+1, x1-1, y0+2, dividers_OnLightBG)"
+				1="fill(x0+1, y0+1, x1-1, y0+2, dividers_onDarkBG)"
 			}
 		}
 
@@ -263,8 +263,8 @@ steam.styles {
 
 		GameItem_Uninstalled {
 			selectedbgcolor=blue500
-			textcolor=disabled_onLightBG
-			selectedtextcolor=white		
+			textcolor=disabled_onDarkBG
+			selectedtextcolor=black		
 			font-family=mediumfont
 			font-size=16
 			font-size=17 [$OSX]
@@ -272,8 +272,8 @@ steam.styles {
 	 
 		GameItem_Installed {
 			selectedbgcolor=blue500
-			textcolor=text_onLightBG
-			selectedtextcolor=white		
+			textcolor=text_onDarkBG
+			selectedtextcolor=black		
 			font-family=mediumfont
 			font-size=16
 			font-size=17 [$OSX]				
@@ -281,8 +281,8 @@ steam.styles {
 		
 		GameItem_Shortcut {
 			selectedbgcolor=blue500
-			textcolor=text_onLightBG
-			selectedtextcolor=white
+			textcolor=text_onDarkBG
+			selectedtextcolor=black
 			font-family=mediumfont
 			font-size=16
 			font-size=17 [$OSX]
@@ -291,7 +291,7 @@ steam.styles {
 		GameItem_Mod {
 			selectedbgcolor=blue500
 			textcolor=bluegrey900
-			selectedtextcolor=white
+			selectedtextcolor=black
 			font-family=mediumfont
 			font-size=16
 			font-size=17 [$OSX]
@@ -300,7 +300,7 @@ steam.styles {
 		GameItem_Updating {
 			selectedbgcolor=blue500
 			textcolor=orange500
-			selectedtextcolor=white
+			selectedtextcolor=black
 			font-family=mediumfont
 			font-size=16
 			font-size=17 [$OSX]
@@ -310,7 +310,7 @@ steam.styles {
 		GameItem_Decrypting {
 			selectedbgcolor=blue500
 			textcolor=green500
-			selectedtextcolor=white
+			selectedtextcolor=black
 			font-family=mediumfont
 			font-size=16
 			font-size=17 [$OSX]
@@ -320,7 +320,7 @@ steam.styles {
 		GameItem_Syncing {
 			selectedbgcolor=blue500
 			textcolor=orange500
-			selectedtextcolor=white
+			selectedtextcolor=black
 			font-family=mediumfont
 			font-size=16
 			font-size=17 [$OSX]
@@ -351,7 +351,7 @@ steam.styles {
 			bgcolor=customgreysecondary
 			selectedbgcolor=blue500
 			textcolor=text_onDarkBG
-			selectedtextcolor=white
+			selectedtextcolor=black
 			font-family="Lucida Console"
 			font-family="Menlo" [$OSX]
 			font-size=11
@@ -364,7 +364,7 @@ steam.styles {
 		console_text_error {
 			selectedbgcolor=blue500
 			textcolor=amber500
-			selectedtextcolor=white
+			selectedtextcolor=black
 			font-family="Lucida Console"
 			font-family="Menlo" [$OSX]
 			font-size=11
@@ -374,7 +374,7 @@ steam.styles {
 		console_text {
 			selectedbgcolor=blue500
 			textcolor=text_onDarkBG
-			selectedtextcolor=white
+			selectedtextcolor=black
 			font-family="Lucida Console"
 			font-family="Menlo" [$OSX]
 			font-size=11
@@ -389,11 +389,11 @@ steam.styles {
 		}	
 
 		ListPanel {
-			bgcolor=white
+			bgcolor=black
 			selectedbgcolor=blue500
-			textcolor=text_onLightBG
-			selectedtextcolor=white
-			shadowtextcolor=disabled_onLightBG
+			textcolor=text_onDarkBG
+			selectedtextcolor=black
+			shadowtextcolor=disabled_onDarkBG
 			font-family=basefont
 			font-size=15
 			font-size=16 [$OSX]
@@ -402,18 +402,18 @@ steam.styles {
 			padding-left=8
 
 			render {
-				0="fill(x0,y0,x0+1,y1-1, dividers_OnLightBG)"
-				1="fill(x1-1,y0,x1,y1-1, dividers_OnLightBG)"
-				2="fill(x0, y1-1, x1, y1, dividers_OnLightBG)"
+				0="fill(x0,y0,x0+1,y1-1, dividers_onDarkBG)"
+				1="fill(x1-1,y0,x1,y1-1, dividers_onDarkBG)"
+				2="fill(x0, y1-1, x1, y1, dividers_onDarkBG)"
 			}
 		}
 		
 		CGamesListPanel {
-			bgcolor=white
+			bgcolor=darkestGrey
 			selectedbgcolor=blue500
-			textcolor=text_onLightBG
-			selectedtextcolor=white
-			shadowtextcolor=disabled_onLightBG
+			textcolor=text_onDarkBG
+			selectedtextcolor=black
+			shadowtextcolor=disabled_onDarkBG
 			font-family=basefont
 			font-size=16
 			font-size=17 [$OSX]
@@ -425,7 +425,7 @@ steam.styles {
 		}
 
 		GameColumn_BigText {
-			textcolor=text_onLightBG
+			textcolor=text_onDarkBG
 			font-family=basefont
 			font-size=18
 			font-size=19 [$OSX]
@@ -501,7 +501,7 @@ steam.styles {
 		
 		ListPanelInterior { 
 			bgcolor=none
-			textcolor=text_onLightBG
+			textcolor=text_onDarkBG
 			font-size=16
 			font-size=17 [$OSX]
 			inset="0 0 0 0"
@@ -512,7 +512,7 @@ steam.styles {
 		
 			ListPanelInterior:scrollbar {	 
 				bgcolor=none
-				textcolor=text_onLightBG
+				textcolor=text_onDarkBG
 				inset="0 0 -1 0"
 				
 				render {}
@@ -520,25 +520,25 @@ steam.styles {
 			} 
 
 		ListPanelSectionHeader {	 
-			textcolor=text_onLightBG
+			textcolor=text_onDarkBG
 			font-family=mediumfont
 			font-style=regular
 			inset="0 0 0 0"
 
 			render_bg {
 				0="fill(x0,y0,x1,y1, white)"
-				1="fill(x0,y0,x1,y0+1, dividers_onLightBG)"
-				2="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
+				1="fill(x0,y0,x1,y0+1, dividers_onDarkBG)"
+				2="fill(x0,y1-1,x1,y1, dividers_onDarkBG)"
 			}	
 		}
 		
 			ListPanelSectionHeader:hover {	 
-				textcolor=secondarytext_onLightBG
+				textcolor=secondarytext_onDarkBG
 			}
 		
 		"ListPanel RichText" {
 			bgcolor=none
-			textcolor=text_onLightBG
+			textcolor=text_onDarkBG
 			font-family=basefont
 			font-size=15
 			font-size=16 [$OSX]			
@@ -567,32 +567,32 @@ steam.styles {
 
 			render {}
 			render_bg {
-				0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG)"
-				1="fill(x0,y1-1,x1+2,y1, dividers_onLightBG)"
+				0="fill(x0,y0-1,x1+2,y0, dividers_onDarkBG)"
+				1="fill(x0,y1-1,x1+2,y1, dividers_onDarkBG)"
 				2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/standard/down_dark)"
 			}
 		}
 
 			ListPanelSectionCollapser:hover {
 				render_bg {
-					0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG)"
-					1="fill(x0,y1-1,x1+2,y1, dividers_onLightBG)"
+					0="fill(x0,y0-1,x1+2,y0, dividers_onDarkBG)"
+					1="fill(x0,y1-1,x1+2,y1, dividers_onDarkBG)"
 					2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/hover/down_dark)"
 				}
 			}
 
 			ListPanelSectionCollapser:selected {
 				render_bg {
-					0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG)"
-					1="fill(x0,y1-1,x1+2,y1, dividers_onLightBG)"
+					0="fill(x0,y0-1,x1+2,y0, dividers_onDarkBG)"
+					1="fill(x0,y1-1,x1+2,y1, dividers_onDarkBG)"
 					2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/standard/up_dark)"
 				}
 			}
 
 				ListPanelSectionCollapser:selected:hover {
 					render_bg {
-						0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG)"
-						1="fill(x0,y1-1,x1+2,y1, dividers_onLightBG)"
+						0="fill(x0,y0-1,x1+2,y0, dividers_onDarkBG)"
+						1="fill(x0,y1-1,x1+2,y1, dividers_onDarkBG)"
 						2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/hover/up_dark)"
 					}
 				}
@@ -648,16 +648,16 @@ steam.styles {
 				}
 
 		ProgressBar {
-			bgcolor=white
+			bgcolor=black
 			textcolor=lightgreen500			
 			inset="0 0 0 0"
 			
 			render {}
 			render_bg {
-				0="fill(x0,y0,x0+1,y1, dividers_OnLightBG)"
-				1="fill(x0+1,y0,x1-1,y0+1, dividers_OnLightBG)"
-				2="fill(x1-1,y0,x1,y1, dividers_OnLightBG)"
-				3="fill(x0+1,y1-1,x1-1,y1, dividers_OnLightBG)"
+				0="fill(x0,y0,x0+1,y1, dividers_onDarkBG)"
+				1="fill(x0+1,y0,x1-1,y0+1, dividers_onDarkBG)"
+				2="fill(x1-1,y0,x1,y1, dividers_onDarkBG)"
+				3="fill(x0+1,y1-1,x1-1,y1, dividers_onDarkBG)"
 			}
 		}
 
@@ -666,8 +666,8 @@ steam.styles {
 		}
 
 		RichText {
-			textcolor=text_OnLightBG
-			selectedtextcolor=text_OnLightBG		
+			textcolor=text_onDarkBG
+			selectedtextcolor=text_onDarkBG		
 			font-family=basefont
 			font-size=15
 			font-size=16 [$OSX]
@@ -684,7 +684,7 @@ steam.styles {
 		"RichText url" {
 			selectedbgcolor=blue500
 			textcolor=blue500
-			selectedtextcolor=white
+			selectedtextcolor=black
 			font-size=15
 			font-size=16 [$OSX]
 			font-style=underline
@@ -716,8 +716,8 @@ steam.styles {
 		SectionedListPanel {			
 			bgcolor=custombackgroundprimary
 			selectedbgcolor=blue500
-			textcolor=text_onLightBG
-			selectedtextcolor=white
+			textcolor=text_onDarkBG
+			selectedtextcolor=black
 			font-family=basefont
 			font-size=15
 			font-size=16 [$OSX]
@@ -737,38 +737,38 @@ steam.styles {
 
 			render {}
 			render_bg {
-				0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG)"
-				1="fill(x0,y1-1,x1+2,y1, dividers_onLightBG)"
+				0="fill(x0,y0-1,x1+2,y0, dividers_onDarkBG)"
+				1="fill(x0,y1-1,x1+2,y1, dividers_onDarkBG)"
 				2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/standard/down_dark)"
 			}
 		}
 
 			SectionedListPanelCollapser:hover {
 				render_bg {
-					0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG)"
-					1="fill(x0,y1-1,x1+2,y1, dividers_onLightBG)"
+					0="fill(x0,y0-1,x1+2,y0, dividers_onDarkBG)"
+					1="fill(x0,y1-1,x1+2,y1, dividers_onDarkBG)"
 					2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/hover/down_dark)"
 				}
 			}
 
 			SectionedListPanelCollapser:selected {
 				render_bg {
-					0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG)"
-					1="fill(x0,y1-1,x1+2,y1, dividers_onLightBG)"
+					0="fill(x0,y0-1,x1+2,y0, dividers_onDarkBG)"
+					1="fill(x0,y1-1,x1+2,y1, dividers_onDarkBG)"
 					2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/standard/up_dark)"
 				}
 			}
 
 				SectionedListPanelCollapser:selected:hover {
 					render_bg {
-						0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG)"
-						1="fill(x0,y1-1,x1+2,y1, dividers_onLightBG)"
+						0="fill(x0,y0-1,x1+2,y0, dividers_onDarkBG)"
+						1="fill(x0,y1-1,x1+2,y1, dividers_onDarkBG)"
 						2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/hover/up_dark)"
 					}
 				}
 
 		StatusLabel {
-			textcolor=secondaryText_OnLightBG
+			textcolor=secondaryText_onDarkBG
 			font-family=basefont
 			font-size=15
 			font-size=16 [$OSX]
@@ -777,7 +777,7 @@ steam.styles {
 		}
 
 			StatusLabel:hover {
-				textcolor=white
+				textcolor=black
 				font-family=basefont
 				font-size=14
 				font-weight=400			
@@ -785,7 +785,7 @@ steam.styles {
 			}
 		
 		StatusLabelDim {
-			textcolor=disabled_OnLightBG
+			textcolor=disabled_onDarkBG
 			font-family=basefont
 			font-size=15
 			font-size=16 [$OSX]
@@ -819,7 +819,7 @@ steam.styles {
 		
 		MenuButton {
 			bgcolor=none
-			textcolor=white
+			textcolor=black
 			font-family=basefont
 			font-size=14
 			font-size=15 [$OSX]
@@ -829,11 +829,11 @@ steam.styles {
 		}
 
 			MenuButton:hover {
-				textcolor=white
+				textcolor=black
 			}
 		
 			MenuButton:selected {
-				textcolor=white
+				textcolor=black
 			}
 
 		TreeNode {
@@ -853,8 +853,8 @@ steam.styles {
 		TreeNodeText {
 			bgcolor=none
 			selectedbgcolor=blue500
-			textcolor=text_OnLightBG
-			selectedtextcolor=white
+			textcolor=text_onDarkBG
+			selectedtextcolor=black
 			font-family=basefont
 			font-size=15
 			font-size=16 [$OSX]
@@ -871,7 +871,7 @@ steam.styles {
 			minimum-width=543
 
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, dividers_onDarkBG)"
 			}
 			
 			render_bg {
@@ -885,32 +885,32 @@ steam.styles {
 			minimum-height=143
 
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, dividers_onDarkBG)"
 			}
 		}
 
 		CChangePasswordWizard {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, dividers_onDarkBG)"
 			}
 		}
 
 		CChangeContactEmailWizard {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, dividers_onDarkBG)"
 			}
 		}
 
 		CValidateContactEmailWizard {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, dividers_onDarkBG)"
 			}
 		}
 
 		CWelcomeToSteamDialog {
 			render {
 				0="fill(x0,y0,x1-55,y0+1, customgreyprimary)"
-				1="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				1="fill(x0,y1-58,x1,y1-57, dividers_onDarkBG)"
 			}
 			render_bg {
 				0="fill(x0,y0,x1,y0+113,customgreyprimary)"
@@ -920,7 +920,7 @@ steam.styles {
 
 		CEmailAddressAlreadyUsedDialog {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, dividers_onDarkBG)"
 			}
 		}
 
@@ -928,7 +928,7 @@ steam.styles {
 			minimum-height=210
 
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, dividers_onDarkBG)"
 			}
 		}
 
@@ -937,7 +937,7 @@ steam.styles {
 
 			render {
 				0="fill(x0,y0,x1-55,y0+1, customgreyprimary)"
-				1="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				1="fill(x0,y1-58,x1,y1-57, dividers_onDarkBG)"
 			}
 			render_bg {
 				0="fill(x0,y0,x1,y0+113,customgreyprimary)"
@@ -950,7 +950,7 @@ steam.styles {
 			minimum-height=374			
 
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, dividers_onDarkBG)"
 			}
 		}
 
@@ -959,14 +959,14 @@ steam.styles {
 			minimum-height=432			
 
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, dividers_onDarkBG)"
 			}
 		}
 
 		CCDKeyDisplayDialog {
 			render {
 				0="image(x0+24, y0+58, x1, y1, graphics/icons/key/key)"
-				1="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				1="fill(x0,y1-58,x1,y1-57, dividers_onDarkBG)"
 			}
 		}
 
@@ -982,7 +982,7 @@ steam.styles {
 
 		CGamePropertiesDialog {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, dividers_onDarkBG)"
 			}
 			
 			render_bg {
@@ -997,7 +997,7 @@ steam.styles {
 
 		CSteamCacheWorkDialog {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, dividers_onDarkBG)"
 			}
 		}
 
@@ -1005,13 +1005,13 @@ steam.styles {
 			minimum-height=198
 
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, dividers_onDarkBG)"
 			}
 		}
 
 		CEditTagsDialog {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, dividers_onDarkBG)"
 			}
 
 			render_bg {
@@ -1021,7 +1021,7 @@ steam.styles {
 
 		CEditFriendsGroupsDialog {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, dividers_onDarkBG)"
 			}
 
 			render_bg {
@@ -1031,25 +1031,25 @@ steam.styles {
 
 		CBackupWizard {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, dividers_onDarkBG)"
 			}
 		}
 
 		CInstallAppWizard {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, dividers_onDarkBG)"
 			}
 		}
 
 		CDialogGameInfo {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, dividers_onDarkBG)"
 			}
 		}
 
 		CSSADialog {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, dividers_onDarkBG)"
 			}
 		}
 
@@ -1073,7 +1073,7 @@ steam.styles {
 
 		CRegisterCDKeyWizard {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-51,x1,y1-50, dividers_onDarkBG)"
 			}
 		}
 
@@ -1082,7 +1082,7 @@ steam.styles {
 			minimum-height=180
 
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, dividers_onDarkBG)"
 			}
 		}
 
@@ -1091,7 +1091,7 @@ steam.styles {
 			minimum-height=378
 			
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, dividers_onDarkBG)"
 			}
 
 			render_bg {}
@@ -1099,26 +1099,26 @@ steam.styles {
 
 		CLaunchOptionsDialog {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, dividers_onDarkBG)"
 			}
 
 			render_bg {}
 		}
 
 		TooltipWindow {
-			bgcolor=white
-			textcolor=secondaryText_onLightBG
+			bgcolor=black
+			textcolor=secondaryText_onDarkBG
 
 			render_bg {
-				0="fill(x0,y0,x0+1,y1, dividers_OnLightBG)"
-				1="fill(x0+1,y0,x1-1,y0+1, dividers_OnLightBG)"
-				2="fill(x1-1,y0,x1,y1, dividers_OnLightBG)"
-				3="fill(x0+1,y1-1,x1-1,y1, dividers_OnLightBG)"
+				0="fill(x0,y0,x0+1,y1, dividers_onDarkBG)"
+				1="fill(x0+1,y0,x1-1,y0+1, dividers_onDarkBG)"
+				2="fill(x1-1,y0,x1,y1, dividers_onDarkBG)"
+				3="fill(x0+1,y1-1,x1-1,y1, dividers_onDarkBG)"
 			}
 		}
 
 		"TooltipWindow Label" {
-			textcolor=secondaryText_OnLightBG
+			textcolor=secondaryText_onDarkBG
 			padding-left=8
 			padding-top=8
 			padding-right=8
@@ -1126,7 +1126,7 @@ steam.styles {
 		}
 		
 		tooltip_headline {
-			textcolor=text_OnLightBG
+			textcolor=text_onDarkBG
 			font-size=18
 			font-size=19 [$OSX]	 
 			font-weight=600
@@ -1148,16 +1148,16 @@ steam.styles {
 
 		friends_chat_text {
 			selectedbgcolor=blue500
-			textcolor=text_OnLightBG
-			selectedtextcolor=white 			
+			textcolor=text_onDarkBG
+			selectedtextcolor=black 			
 			font-size=17
 			font-size=18 [$OSX]
 		}
 		
 		friends_chat_text_self {
 			selectedbgcolor=blue500
-			textcolor=secondaryText_OnLightBG
-			selectedtextcolor=white			
+			textcolor=secondaryText_onDarkBG
+			selectedtextcolor=black			
 			font-size=17
 			font-size=18 [$OSX]
 		}
@@ -1165,14 +1165,14 @@ steam.styles {
 		friends_chat_event {
 			selectedbgcolor=blue500
 			textcolor=orange500
-			selectedtextcolor=white
+			selectedtextcolor=black
 			font-size=17
 			font-size=18 [$OSX]		
 		}
 
 		friends_chat_bright_event {
 			textcolor=orange500
-			selectedtextcolor=white
+			selectedtextcolor=black
 			font-size=17
 			font-size=18 [$OSX]
 			font-weight=1000
@@ -1181,7 +1181,7 @@ steam.styles {
 		friends_chat_url {
 			selectedbgcolor=blue500
 			textcolor=blue500
-			selectedtextcolor=white
+			selectedtextcolor=black
 			font-style=underline
 			font-size=17
 			font-size=18 [$OSX]
@@ -1190,7 +1190,7 @@ steam.styles {
 		friends_chat_name_ingame {
 			selectedbgcolor=blue500
 			textcolor=lightgreen500
-			selectedtextcolor=white			
+			selectedtextcolor=black			
 			font-size=17
 			font-size=18 [$OSX]
 		}
@@ -1198,7 +1198,7 @@ steam.styles {
 		friends_chat_name_golden {
 			selectedbgcolor=blue500
 			textcolor=orange500
-			selectedtextcolor=white
+			selectedtextcolor=black
 			font-size=17
 			font-size=18 [$OSX]
 		}
@@ -1206,7 +1206,7 @@ steam.styles {
 		friends_chat_self {
 			selectedbgcolor=blue500
 			textcolor=blue500
-			selectedtextcolor=white
+			selectedtextcolor=black
 			font-size=17
 			font-size=18 [$OSX]
 		}
@@ -1214,14 +1214,14 @@ steam.styles {
 		friends_chat_name {
 			selectedbgcolor=blue500
 			textcolor=blue500
-			selectedtextcolor=white			
+			selectedtextcolor=black			
 			font-size=17
 			font-size=18 [$OSX]
 		}
 		
 		friends_chat_accountid {
 			selectedbgcolor=blue500
-			textcolor=white
+			textcolor=black
 			selectedtextcolor=red500
 			font-size=17
 			font-size=18 [$OSX]
@@ -1231,7 +1231,7 @@ steam.styles {
 			bgcolor=none
 			selectedbgcolor=blue500
 			textcolor=orange500
-			selectedtextcolor=white
+			selectedtextcolor=black
 			font-family=basefont
 			font-size=17
 			font-size=18 [$OSX]
@@ -1241,8 +1241,8 @@ steam.styles {
 
 		friends_chat_history {
 			selectedbgcolor=blue500
-			textcolor=disabled_OnLightBG
-			selectedtextcolor=white
+			textcolor=disabled_onDarkBG
+			selectedtextcolor=black
 			font-size=17
 			font-size=18 [$OSX]
 		}
@@ -1309,7 +1309,7 @@ steam.styles {
 
 		"ProgressBox FrameCloseButton" {
 			render_bg {
-				0="image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/standard/close_onLightBG)"
+				0="image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/standard/close_onDarkBG)"
 			}
 		}
 
@@ -1330,7 +1330,7 @@ steam.styles {
 			}
 
 		"ProgressBox Label" {
-			textcolor=secondaryText_onLightBG
+			textcolor=secondaryText_onDarkBG
 		}
 	}
 }

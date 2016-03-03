@@ -39,7 +39,7 @@
 			}
 
 		Label {
-			textcolor=white
+			textcolor=black
 			font-family=mediumfont
 			font-size=16
 			font-size=17 [$OSX]

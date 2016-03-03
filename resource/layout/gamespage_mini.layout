@@ -34,7 +34,7 @@
 		}
 		
 			FrameTitle:framefocus {
-				textcolor=white
+				textcolor=black
 			}
 		
 		"MenuBar MenuButton" {
@@ -107,7 +107,7 @@
 		
 		LibrarySearch {
 			bgcolor=custombackgroundprimary
-			textcolor=text_onLightBG
+			textcolor=text_onDarkBG
 			font-family=basefont
 			font-size=18
 			font-size=19 [$OSX]
@@ -117,7 +117,7 @@
 			padding-left=0
 			
 			render {
-				0="fill(x0-40,y1-1,x1,y1, dividers_onLightBG)"
+				0="fill(x0-40,y1-1,x1,y1, dividers_onDarkBG)"
 			}
 		}
 		
@@ -125,20 +125,20 @@
 			
 			LibrarySearch:empty {
 				font-style=italic
-				textcolor=disabled_onLightBG
+				textcolor=disabled_onDarkBG
 			}
 			
 			LibrarySearch:hover {
-				textcolor=text_onLightBG
+				textcolor=text_onDarkBG
 			}
 			
 			LibrarySearch:empty:hover {
-				textcolor=secondaryText_onLightBG
+				textcolor=secondaryText_onDarkBG
 			}
 			
 			LibrarySearch:disabled {
 				font-style=italic
-				textcolor=disabled_onLightBG
+				textcolor=disabled_onDarkBG
 			}
 		
 		LibrarySearchIcon {
@@ -148,7 +148,7 @@
 			render_bg {
 				-1="fill(x1,y0,x1+10,y1, custombackgroundprimary)"
 				0="image(x0+14,y0+13,x1,y1, graphics/icons/search/standard)"
-				1="fill(x0,y1-1,x1+25,y1, dividers_onLightBG)"
+				1="fill(x0,y1-1,x1+25,y1, dividers_onDarkBG)"
 			}
 		}
 		
@@ -179,8 +179,8 @@
 		}
 		
 		ListPanelSectionHeader {
-			bgcolor=white
-			textcolor=customgreysecondary
+			bgcolor=black
+			textcolor=orange500
 			font-weight=600
 			font-style=uppercase
 			minimum-height=47
@@ -190,8 +190,8 @@
 			
 			render {}
 			render_bg {
-				0="fill(x0,y0-1,x1,y0, dividers_onLightBG)"
-				1="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
+				0="fill(x0,y0-1,x1,y0, dividers_onDarkBG)"
+				1="fill(x0,y1-1,x1,y1, dividers_onDarkBG)"
 			}
 		}
 		
@@ -203,32 +203,32 @@
 
 			render {}
 			render_bg {
-				0="fill(x0,y0-1,x1,y0, dividers_onLightBG)"
-				1="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
+				0="fill(x0,y0-1,x1,y0, dividers_onDarkBG)"
+				1="fill(x0,y1-1,x1,y1, dividers_onDarkBG)"
 				2="image(x0+14,y0+18,x1,y1, graphics/icons/dropdown/standard/down_dark)"
 			}
 		}
 		
 			ListPanelSectionCollapser:hover {
 				render_bg {
-					0="fill(x0,y0-1,x1,y0, dividers_onLightBG)"
-					1="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
+					0="fill(x0,y0-1,x1,y0, dividers_onDarkBG)"
+					1="fill(x0,y1-1,x1,y1, dividers_onDarkBG)"
 					2="image(x0+14,y0+18,x1,y1, graphics/icons/dropdown/hover/down_dark)"
 				}
 			}
 			
 			ListPanelSectionCollapser:selected {
 				render_bg {
-					0="fill(x0,y0-1,x1,y0, dividers_onLightBG)"
-					1="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
+					0="fill(x0,y0-1,x1,y0, dividers_onDarkBG)"
+					1="fill(x0,y1-1,x1,y1, dividers_onDarkBG)"
 					2="image(x0+14,y0+18,x1,y1, graphics/icons/dropdown/standard/up_dark)"
 				}
 			}
 			
 				ListPanelSectionCollapser:selected:hover {
 					render_bg {
-						0="fill(x0,y0-1,x1,y0, dividers_onLightBG)"
-						1="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
+						0="fill(x0,y0-1,x1,y0, dividers_onDarkBG)"
+						1="fill(x0,y1-1,x1,y1, dividers_onDarkBG)"
 						2="image(x0+14,y0+18,x1,y1, graphics/icons/dropdown/hover/up_dark)"
 					}
 				}

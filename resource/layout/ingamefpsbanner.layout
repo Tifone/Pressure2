@@ -16,11 +16,11 @@
 		}
 		
 		HighContrast {
-			bgcolor=secondaryText_OnLightBG
+			bgcolor=secondaryText_onDarkBG
 			textcolor=lightgreenA400
 			padding-left=4
 			padding-top=4
-			padding-right=4			
+			padding-right=4
 			padding-bottom=4
 			minimum-width=60
 			minimum-height=20

@@ -18,7 +18,7 @@
 				textcolor=blue300
 				
 				render_bg {
-					0="fill(x0,y0,x1,y1, dividers_onLightBG)"
+					0="fill(x0,y0,x1,y1, dividers_onDarkBG)"
 				}
 			}
 
@@ -34,7 +34,7 @@
 					textcolor=blue500
 
 					render_bg {
-						0="fill(x0,y0,x1,y1, dividers_onLightBG)"
+						0="fill(x0,y0,x1,y1, dividers_onDarkBG)"
 					}
 				}
 

@@ -12,10 +12,10 @@
 		}
 
 		overlaymain {
-			bgcolor=disabled_onLightBG
+			bgcolor=secondaryText_OnLightBG
 
 			render_bg {
-				0="gradient_horizontal(x0,y0,x0+1080,y1, secondaryText_OnLightBG)"
+				0="gradient_horizontal(x0,y0,x0+1080,y1, darkgreytransparent)"
 			}
 		}	
 				

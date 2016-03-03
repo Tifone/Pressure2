@@ -9,7 +9,7 @@
 		}
 		
 		highlight {
-			textcolor=white
+			textcolor=Text_OnDarkBG
 			font-family=mediumfont
 			font-size=28
 			font-size=29 [$OSX]
