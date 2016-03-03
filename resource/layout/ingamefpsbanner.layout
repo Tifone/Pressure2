@@ -16,7 +16,7 @@
 		}
 		
 		HighContrast {
-			bgcolor=secondaryText_onDarkBG
+			bgcolor=secondaryText_onLightBG
 			textcolor=lightgreenA400
 			padding-left=4
 			padding-top=4
